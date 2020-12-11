@@ -84,7 +84,7 @@ while(seats != newSeats):
     for row in range(len(seats)):
         for col in range(len(seats[row])):
             if seats[row][col] != '.':
-                nei = neig2(row, col, seats)
+                nei = neighbours2(row, col, seats)
                 if nei == 0:
                     newSeats[row][col] = '#'
                 elif nei >= 5:
